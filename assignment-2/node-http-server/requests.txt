@@ -1,0 +1,10 @@
+curl http://localhost:3000/hello/amjad
+curl -X POST http://localhost:3000/profile -H "Content-Type: application/json" -d '{
+    "Name": "Raveed Ullah Usmani",
+    "Title": "CS Undergraduate",
+    "TargetedKeywords": ["JavaScript", "Node.js", "React"],
+    "Education": "BSc in Computer Science",
+    "Certification": "Certified Node.js Developer",
+    "Contact": "raveedusmani@gmail.com"
+}'
+curl http://localhost:3000/profiles
