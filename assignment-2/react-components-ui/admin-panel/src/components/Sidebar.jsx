@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Sidebar = () => {
     return (
         <nav id="sidebar" className="sidebar js-sidebar">
@@ -15,11 +16,17 @@ const Sidebar = () => {
                         </a>
                     </li>
 
-                    <li className="sidebar-item">
+                    {/* <li className="sidebar-item">
                         <a className="sidebar-link" href="pages-profile.html">
                             <i className="align-middle" data-feather="user"></i> <span>Profile</span>
                         </a>
+                    </li> */}
+                    <li className="sidebar-item">
+                        <Link className="sidebar-link" to="/profile">
+                            <i className="align-middle" data-feather="user"></i> <span>Profile</span>
+                        </Link>
                     </li>
+
 
                     <li className="sidebar-item">
                         <a className="sidebar-link" href="pages-sign-in.html">
